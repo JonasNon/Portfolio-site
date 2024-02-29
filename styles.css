@@ -1,6 +1,10 @@
+body {
+  height: auto;
+}
+
 .main-container {
   width: 100%;
-  height: 100vh;
+  height: 250%;
 }
 
 #header-links {
@@ -49,7 +53,7 @@ img {
 }
 
 .mid-container {
-  height: 20%;
+  height: 10%;
   width: 100%;
   background-color: #63E1F6;
   display: flex;
@@ -71,18 +75,42 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   width: 100%;
-  height: 70%;
+  height: 90%;
   background-color: #00A0DE;
 }
 
 .example {
-  border: 10px solid #D2F1F9;
-  border-radius: 50%;
-  height: 50vh;
-  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 33%;
+  width: 100%;
   padding-left: 5vh;
   padding-right: 5vh;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #D2F1F9;
+  border-radius: 50%;
+  background-color: #bceaf6;
+  height: 40vw;
+  width: 40vw;
+  animation-name: bob;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.text {
+  height: 50vh;
+  width: 50vw;
+  padding: 10vw;
 }
 
 footer {
@@ -91,4 +119,21 @@ footer {
   align-items: center;
   background-color: #014983;
   height: 10vh;
+}
+
+
+
+/* animations below */
+
+@keyframes bob {
+  0% {
+    transform-origin: top;
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
 }
