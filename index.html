@@ -7,48 +7,74 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="main-container">
-    <div id="header">
-      <div id="logo-img">
-        <img src="./Me.png" alt="">
-      </div>
-      <ul id="header-links">
-        <a class="head-link" href="./index.html">Home</a>
-        <a class="head-link" href="./about.html">About</a>
-        <a class="head-link" href="./gallary.html">Gallary</a>
-        <a class="head-link" href="./resume.html">Resume</a>
-        <a class="head-link" href="./contact.html">Contact Me</a>
-
-      </ul>
+  <div id="header">
+    <div id="fake-background-top"></div>
+    <div class="ocean">
+      <div class="wave"></div>
     </div>
+
+    <div id="top-color-holder"></div>
+    <!-- <div id="logo-img">
+      <img src="./Me.png" alt="">
+    </div> -->
+    <ul id="header-links">
+      <a class="cloud selected" href="./index.html"><p class="absolute">Home</p></a>
+      <a class="cloud" href="./about.html"><p class="absolute">About</p></a>
+      <a class="cloud" href="./gallary.html"><p class="absolute">Gallary</p></a>
+      <a class="cloud" href="./resume.html"><p class="absolute">Resume</p></a>
+      <a class="cloud" href="./contact.html"><p class="absolute">Contact Me</p></a>
+
+    </ul>
+  </div>
+  <div id="fake-background"></div>
+  <div id="main-container">
+    <div id="color-holder"></div>
     <div class="mid-container">
       <h1>JONAS NONMACHER</h1>
-      <p>A man of many talents, now including web design.</p>
+      <h2>A man of many talents, now including web design.</h2>
     </div>
     <div class="lower-examples">
-      <section class="example" id="border-cycle">
-        <div class="bubble">
-          <p class="enable">Click here to Toggle!</p>
+      <!-- <section class="example" id="border-cycle"> -->
+        <div class="bubble" id="bubble-one" onclick="testFunc(this)">
+          <p class="enable big">Click here to Toggle!</p>
         </div>
-        <p class="text">I made this tech that has the colors cycle in this neat animation.</p>
-      </section>
-      <section class="example" id="follow-cursor">
-        <p class="text">Here you can see some more tech.</p>
-        <div class="bubble">
-          <p class="enable">Click here to Toggle!</p>
+        <p class="text big" id="bubble-two">I made this tech that has the colors cycle in this neat animation.</p>
+      <!-- </section> -->
+      <!-- <section class="example" id="bubble-three" id="follow-cursor"> -->
+        <p class="text big" id="bubble-three">Here you can see some more tech.</p>
+        <div class="bubble" id="bubble-four">
+          <p class="enable big">Click here to Toggle!</p>
         </div>
-      </section>
-      <section class="example" id="small-game">
-        <div class="bubble">
-          <p class="enable">Click here to Toggle!</p>
+      <!-- </section> -->
+      <!-- <section class="example" id="small-game"> -->
+        <div class="bubble" id="bubble-five">
+          <p class="enable big">Click here to Toggle!</p>
         </div>
-        <p class="text">And wow even more tech.</p>
-      </section>
+        <p class="text big" id="bubble-six">And wow even more tech.</p>
+      <!-- </section> -->
     </div>
-    <footer class="footer">
+    <div class="footer">
       <p>Copyright ME</p>
-    </footer>
+    </div>
+    <div class="back-bubble front" id="one"></div>
+    <div class="back-bubble front" id="two"></div>
+    <div class="back-bubble front" id="three"></div>
+    <div class="back-bubble front" id="four"></div>
+    <div class="back-bubble front" id="five"></div>
+    <div class="back-bubble front" id="six"></div>
+    <div class="back-bubble front" id="seven"></div>
+    <div class="back-bubble front" id="eight"></div>
+    <div class="back-bubble front" id="nine"></div>
+    <div class="back-bubble front" id="ten"></div>
+    <div class="back-bubble front" id="eleven"></div>
+    <div class="back-bubble front" id="twelve"></div>
+    <div class="back-bubble front" id="thirteen"></div>
+    <div class="back-bubble front" id="fourteen"></div>
+
+
+
+    
   </div>
 </body>
-<script src="./scripts.js"></script>
+<script src="./scripts.js" defer></script>
 </html>

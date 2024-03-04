@@ -1,0 +1,61 @@
+#fake-background {
+  height: 100vh;
+}
+
+#main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mid-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+}
+h1 {
+  padding-top: 10vh;
+
+}
+
+h2 {
+  padding-top: 10vh;
+
+}
+
+/* .footer {
+  padding-top: 2vh;
+} */
+
+#side-by-side {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vw;
+}
+
+#left {
+  width: 48vw;
+}
+
+#right {
+  height: 50vh;
+  width: 48vh;
+  border-radius: 50%;
+  /* border: 3px solid #D2F1F9; */
+  background-image: url("./tree-me-cropped.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#overlay {
+  background-image: url("../bubbles/real-bubble.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+}
