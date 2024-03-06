@@ -8,7 +8,7 @@ const topColorHolder = document.getElementById("top-color-holder")
 
 let toggleA = false
 let currentTop = 0
-
+let topCloud
 
 const testFunc = (clicked) => {
   if (toggleA) {
@@ -20,6 +20,44 @@ const testFunc = (clicked) => {
   }
   // clicked.style.animation = "bob-rgb-color"
   // console.log(document.body.scrollHeight)
+}
+
+
+
+const cloudClick = (cloud) => {
+  // cloud.style.visibility = "hidden !important";
+  topCloud = cloud
+  header.style.height = "400px";
+  cloud.classList.remove("visibility");
+}
+
+const cloudUnClick = () => {
+  topCloud.style.visibility = "visible !important";
+  header.style.height = "200px";
+  topCloud.classList.add("visibility");
+
+}
+
+const redirect = (link) => {
+  if (link == "eins") {
+    window.open("https://jonasnon.github.io/CycleColorBorder/", "_blank");
+  }
+  if (link == "zwei") {
+    window.open("https://jonasnon.github.io/hair-salon/", "_blank");
+  }
+  if (link == "drei") {
+    window.open("https://jonasnon.github.io/DUMMY-data-todo/", "_blank");
+  }
+  if (link == "vier") {
+    window.open("https://jonasnon.github.io/Calculator-Homemade/", "_blank");
+  }
+  if (link == "funf") {
+    window.open("https://jonasnon.github.io/TicTacToe-101-JONAS/", "_blank");
+  }
+  if (link == "sechs") {
+    window.open("https://jonasnon.github.io/Colorful-Recreation/", "_blank");
+  }
+  console.log(link)
 }
 
 // const startBottom = () => {

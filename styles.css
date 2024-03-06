@@ -39,6 +39,7 @@ body {
   align-items: center;
   width: 100%;
   padding-top: 8vh;
+  position: relative;
 }
 
 a {
@@ -105,10 +106,13 @@ img {
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 70;
   font-family: 'Courier New', Courier, monospace;
   color: white;
-
+  text-shadow: 2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000
 }
 
 p {
@@ -178,6 +182,9 @@ h2 {
   height: fit-content;
   width: 50vw;
   padding: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
@@ -551,3 +558,71 @@ h2 {
   
 }
 
+
+
+.cloud-pop {
+  z-index: 20;
+  position: absolute;
+  visibility: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  content: "+";
+}
+
+.cloud-pop::after {
+  top: -117px;
+  left: -30px;
+}
+
+.cloud-pop::before {
+  top: -50px;
+  left: 23px;
+}
+
+#plus {
+  position: absolute;
+  top: -16px;
+  left: 65px;
+  font-size: xx-large;
+}
+
+.modal-backdrop {
+  visibility: hidden !important;
+  z-index: -100;
+}
+
+.modal-content {
+  border-radius: 50%;
+  --mask:
+    radial-gradient(38.42px at 50% 54px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+    radial-gradient(38.42px at 50% -24px,#0000 99%,#000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+    radial-gradient(38.42px at 50% calc(100% - 54px),#000 99%,#0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+    radial-gradient(38.42px at 50% calc(100% + 24px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  height: 300px;
+}
+
+button.close {
+  padding-top: 45px;
+}
+
+.visibility {
+  visibility: hidden !important;
+}
+
+
+@media (max-width: 680px) {
+  /* adjust clouds */
+  a.cloud {
+    visibility: hidden;
+  }
+
+  .visibility {
+    visibility: visible !important;
+  }
+
+
+
+}

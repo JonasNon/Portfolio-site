@@ -4,23 +4,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div id="header">
+    <div class="modal" id="cloudModal"  role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content visibility">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="cloudUnClick()">
+            <span aria-hidden="true">-</span>
+            <!-- <i aria-hidden="true" class="bi bi-patch-plus">+</i> -->
+  
+          </button>
+          <button type="button" class="btn">Home</button>
+          <button type="button" class="btn">About</button>
+          <button type="button" class="btn">Gallery</button>
+          <button type="button" class="btn">Resume</button>
+          <button type="button" class="btn">Contact Me</button>
+        </div>
+      </div>
+    </div>
+
+
     <div id="fake-background-top"></div>
     <div class="ocean">
       <div class="wave"></div>
     </div>
-
+    
     <div id="top-color-holder"></div>
     <!-- <div id="logo-img">
       <img src="./Me.png" alt="">
     </div> -->
     <ul id="header-links">
+      <a type="button" class="btn btn-primary cloud-pop cloud visibility" data-toggle="modal" data-target="#cloudModal" onclick="cloudClick(this)">
+        <span id="plus">+</span>
+      </a>
       <a class="cloud selected" href="./index.html"><p class="absolute">Home</p></a>
       <a class="cloud" href="./about.html"><p class="absolute">About</p></a>
-      <a class="cloud" href="./gallary.html"><p class="absolute">Gallary</p></a>
+      <a class="cloud" href="./gallary.html"><p class="absolute">Gallery</p></a>
       <a class="cloud" href="./resume.html"><p class="absolute">Resume</p></a>
       <a class="cloud" href="./contact.html"><p class="absolute">Contact Me</p></a>
 
@@ -42,12 +64,12 @@
       <!-- </section> -->
       <!-- <section class="example" id="bubble-three" id="follow-cursor"> -->
         <p class="text big" id="bubble-three">Here you can see some more tech.</p>
-        <div class="bubble" id="bubble-four">
+        <div class="bubble" id="bubble-four" onclick="testFunc(this)">
           <p class="enable big">Click here to Toggle!</p>
         </div>
       <!-- </section> -->
       <!-- <section class="example" id="small-game"> -->
-        <div class="bubble" id="bubble-five">
+        <div class="bubble" id="bubble-five" onclick="testFunc(this)">
           <p class="enable big">Click here to Toggle!</p>
         </div>
         <p class="text big" id="bubble-six">And wow even more tech.</p>
@@ -77,4 +99,7 @@
   </div>
 </body>
 <script src="./scripts.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

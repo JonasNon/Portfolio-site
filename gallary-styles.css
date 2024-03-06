@@ -1,3 +1,110 @@
 #main-container {
   height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.top-line {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.bubble {
+  height: 30vh;
+  width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  color: black;
+}
+
+#eins {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: 0s;
+  background-image: url("../thumbnails/thumb-colorCycle.png");
+  background-size: 100% 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 0 #fff
+}
+#zwei {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  animation-delay: -3s;
+  background-image: url("../thumbnails/thumb-hariSalon.png");
+  background-size: 100% 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 0 #fff
+}
+#drei {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: -2s;
+  background-image: url("../thumbnails/thumb-DUMMY.png");
+  background-size: 100% 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 0 #fff
+}
+#vier {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: -.5s;
+  background-image: url("../thumbnails/thumb-Calc.png");
+  background-size: 100% 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 0 #fff
+
+}
+#funf {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  animation-delay: -1.5s;
+  background-image: url("../thumbnails/thumb-TTT.png");
+  background-size: 100% 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 0 #fff
+}
+#sechs {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  margin-left: auto;
+  margin-right: auto;
+  animation-delay: -1s;
+  background-image: url("../thumbnails/thumb-recreation.png");
+  background-size: 100% 100%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 1px 1px 0 #fff,
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff
+
+  
 }
