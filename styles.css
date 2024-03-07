@@ -105,6 +105,7 @@ img {
   flex-direction: column;
 }
 
+
 h1 {
   font-size: 70;
   font-family: 'Courier New', Courier, monospace;
@@ -112,7 +113,8 @@ h1 {
   text-shadow: 2px 2px 0 #000,
   -2px -2px 0 #000,
   2px -2px 0 #000,
-  -2px 2px 0 #000
+  -2px 2px 0 #000;
+  text-align: center;
 }
 
 p {
@@ -125,7 +127,7 @@ h2 {
   color: white;
   padding-left: 5vh;
   padding-right: 5vh;
-
+  text-align: center;
 }
 
 /* .lower-examples {
@@ -523,7 +525,9 @@ h2 {
     height: 260px;
     width: 260px;
   }
-  
+  h1 {
+    padding-top: 150px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -554,6 +558,9 @@ h2 {
   #bubble-six {
     grid-row: 5;
     grid-column: 1;
+  }
+  h1 {
+    padding-top: 50px;
   }
   
 }
@@ -612,6 +619,17 @@ button.close {
   visibility: hidden !important;
 }
 
+a.btn:hover {
+  background-color: gray;
+}
+
+button.close:hover {
+  background-color: gray;
+}
+
+.bottom {
+  padding-bottom: 10vh;
+}
 
 @media (max-width: 680px) {
   /* adjust clouds */
