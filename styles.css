@@ -53,6 +53,7 @@ a {
   justify-content: space-evenly;
   align-items: flex-start;
   height: 200px;
+  width: 100vw;
   position: relative;
   z-index: 1;
 
@@ -562,7 +563,9 @@ h2 {
   h1 {
     padding-top: 50px;
   }
-  
+  body {
+    overflow-y: visible !important;
+  }
 }
 
 
@@ -610,6 +613,11 @@ h2 {
   mask: var(--mask);
   height: 300px;
 }
+
+/* #cloudModal {
+  overflow-x: hidden;
+  padding-right: 0;
+} */
 
 button.close {
   padding-top: 45px;
