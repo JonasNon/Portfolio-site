@@ -1,7 +1,77 @@
 
 #main-container {
   height: 80vh;
-  display: grid;
+  display: flex;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#fake-background {
+  height: 120vh;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 30vh;
+}
+
+.mid-container {
+  padding-top: 2vh;
+  height: 100%;
+}
+
+.split {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+section {
+  border: 5px solid aquamarine;
+  height: 300px !important;
+  width: 300px !important;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  align-items: center;
+  margin: 50px;
+}
+
+#mueller {
+  background-image: url("./thumbnails/heb-mueller.png");
+  animation-delay: 2s;
+}
+
+#lakeside {
+  background-image: url("./thumbnails/heb-lake-austin.png");
+}
+
+/* .text {} */
+
+.footer {
+  padding-top: 250px;
+}
+
+p {
+  text-align: center;
+}
+
+
+
+@media (max-width: 680px) {
+  .split {
+    flex-direction: column;
+  }
+  .mid-container {
+    padding-top: 400px;
+    padding-bottom: 50px;
+  }
+  #fake-background {
+    height: 160vh;
+  }
+  .footer {
+    padding-top: 360px;
+  }
 }

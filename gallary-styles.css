@@ -27,6 +27,9 @@
 p {
   color: black;
 }
+#copy {
+  color: white;
+}
 
 #eins {
   grid-row: 2/3;
@@ -107,4 +110,69 @@ p {
   -1px 1px 0 #fff
 
   
+}
+
+#fake-background {
+  height: 135vh;
+}
+
+@media (min-width: 679px) {
+  .footer {
+    padding-top: 30vh;
+  }
+}
+
+
+
+
+@media (max-width: 680px) {
+  #main-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 170vh;
+  }
+
+  #fake-background {
+    height: 180vh;
+  }
+
+  .bubble {
+    margin-top: 50px;
+  }
+
+  #eins {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  #zwei {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  #drei {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  #vier {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    animation-delay: 3s;
+  }
+  #funf {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  #sechs {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+}
+
+@media (max-width: 480px) {
+  .bubble {
+    height: 22vh;
+    width: 22vh;
+  }
+  #main-container {
+    grid-template-rows: .5fr 1fr 1fr 1fr;
+  }
 }

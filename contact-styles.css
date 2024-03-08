@@ -24,6 +24,18 @@
   padding-top: 10vh;
 } */
 
+
+
+a.text {
+  width: fit-content;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  text-align: center;
+  font-size: 32px;
+}
+
 #lower-text {
   display: flex;
   justify-content: center;
