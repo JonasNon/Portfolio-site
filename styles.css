@@ -131,6 +131,10 @@ h2 {
   text-align: center;
 }
 
+#start-line {
+  animation-duration: 3s;
+}
+
 /* .lower-examples {
   display: flex;
   justify-content: space-evenly;
@@ -188,6 +192,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-wrap: nowrap;
 }
 
 .footer {
@@ -283,8 +288,36 @@ h2 {
   }
 }
 
+@keyframes fade-in {
+  0% {
+    font-size: 16px;
+    opacity: 0%;
+  }
+  100% {
+    font-size: 32px;
+    opacity: 100%;
+  }
 
+}
 
+.fade-in {
+  animation: fade-in 1.5s ease-out;
+}
+
+@keyframes fade-in-small {
+  0% {
+    font-size: 8px;
+    opacity: 0%;
+  }
+  100% {
+    font-size: 16px;
+    opacity: 100%;
+  }
+}
+
+.fade-in-small {
+  animation: fade-in-small 3s ease-out;
+}
 
 
 .absolute {
@@ -332,6 +365,11 @@ h2 {
 .cloud:hover {
   background-color: gray;
 }
+
+.modal-dialog {
+  position: relative !important;
+}
+
 
 
 .ocean { 
@@ -381,6 +419,7 @@ h2 {
 
 
 
+
 /* BUUBBLES BELOW HERE WOW COOL */
 
 .back-bubble {
@@ -398,6 +437,80 @@ h2 {
   animation-delay: -15s;
   /* animation-play-state: paused; */
 }
+
+.ring-master {
+  position: relative;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%; 
+  /* z-index: 10000; */
+}
+
+.cycle {
+  animation: cycle 6s infinite ease-in-out;
+}
+
+#qwe {
+  height: 20%;
+  width: 20%;
+  z-index: 500;
+  animation-delay: -1s;
+}
+#rty {
+  height: 40%;
+  width: 40%;
+  z-index: 400;
+  animation-delay: -2s;
+
+}
+#uio {
+  height: 60%;
+  width: 60%;
+  z-index: 300;
+  animation-delay: -4s;
+
+}
+#asd {
+  height: 80%;
+  width: 80%;
+  z-index: 200;
+  animation-delay: -5s;
+
+}
+#fgh {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  animation-delay: -6s;
+}
+
+
+@keyframes cycle {
+  0% {
+    background-color: #E53935;
+  }
+  16% {
+    background-color: #FFB74D;
+  }
+  33% {
+    background-color: #FFEE58;
+  }
+  50% {
+    background-color: #388E5A;
+  }
+  66% { 
+    background-color: #42A5F5;
+  }
+  83% {
+    background-color: #8756D5;
+  }
+  100% {
+    background-color: #EA9BD7;
+  }
+}
+
 
 @keyframes float-up {
   0% {
@@ -654,3 +767,7 @@ button.close:hover {
 
 
 }
+
+
+
+

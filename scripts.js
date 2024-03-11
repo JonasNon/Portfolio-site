@@ -60,6 +60,25 @@ const redirect = (link) => {
   console.log(link)
 }
 
+let cycleOn = false
+const cycleClick = () => {
+  if (cycleOn == false) {
+    cycleOn = true
+    for (i = 0; i < document.getElementsByClassName("ring").length; i++) {
+      console.log(document.getElementsByClassName("ring")[i])
+      document.getElementsByClassName("ring")[i].classList.add("cycle")
+    }
+  } else {
+    cycleOn= false
+    for (i = 0; i < document.getElementsByClassName("ring").length; i++) {
+      console.log(document.getElementsByClassName("ring")[i])
+      document.getElementsByClassName("ring")[i].classList.remove("cycle")
+    }
+  }
+}
+
+
+
 // const startBottom = () => {
 
 //   for (i = 0; i < document.body.scrollHeight; i++) {

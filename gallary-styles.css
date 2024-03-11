@@ -13,6 +13,12 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
+  flex-direction: column;
+
+}
+
+h2.text {
+  padding: 1vh;
 }
 
 .bubble {
@@ -29,7 +35,31 @@ p {
 }
 #copy {
   color: white;
+  padding-top: 30vh;
 }
+
+p.text {
+  color: white;
+  width: 100%;
+}
+
+.text {
+  padding: 3vh;
+}
+
+
+@keyframes fade-in {
+  0% {
+    font-size: 8px;
+    opacity: 0%;
+  }
+  100% {
+    font-size: 16px;
+    opacity: 100%;
+  }
+
+}
+
 
 #eins {
   grid-row: 2/3;
@@ -113,7 +143,7 @@ p {
 }
 
 #fake-background {
-  height: 135vh;
+  height: 150vh;
 }
 
 @media (min-width: 679px) {
@@ -132,8 +162,13 @@ p {
     height: 170vh;
   }
 
+  #copy {
+    color: white;
+    padding-top: 20vh;
+  }
+
   #fake-background {
-    height: 180vh;
+    height: 190vh;
   }
 
   .bubble {
@@ -165,6 +200,12 @@ p {
     grid-row: 4/5;
     grid-column: 2/3;
   }
+}
+
+.header {
+  grid-row: 1/3;
+  grid-column: 1/3;
+  display: flex;
 }
 
 @media (max-width: 480px) {

@@ -1,9 +1,11 @@
 #fake-background {
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #main-container {
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +16,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 80vh;
+  height: fit-content;
 }
 /* h1 {
   padding-top: 10vh;
@@ -23,7 +25,7 @@
 
 h2 {
   padding-top: 10vh;
-  font-size: 18;
+  font-size: 15;
 }
 
 /* .footer {
@@ -35,15 +37,17 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   padding: 5vw;
+  width: 100vw;
 }
 
 #left {
-  width: 48vw;
+  width: 95%;
+
 }
 
 #right {
   height: 50vh;
-  width: 48vh;
+  width: 96vh;
   border-radius: 50%;
   /* border: 3px solid #D2F1F9; */
   background-image: url("./tree-me-cropped.jpg");
@@ -58,4 +62,36 @@ h2 {
   z-index: 10;
   height: 100%;
   width: 100%;
+}
+
+
+@keyframes fade-in {
+0% {
+    font-size: 10px;
+    opacity: 0%;
+  }
+  100% {
+    font-size: 15;
+    opacity: 100%;
+  }
+
+  
+}
+
+@media (max-width: 680px) {
+  #side-by-side {
+    flex-direction: column;
+  }
+
+  #right {
+    width: 48vh;
+  }
+
+  #fake-background {
+    height: 180vh;
+  }
+
+  .footer {
+    padding-top: 10vh;
+  }
 }
